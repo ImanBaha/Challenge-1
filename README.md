@@ -1,62 +1,37 @@
 # Big Bang Challenge
 
-A TypeScript solution that generates numbers 1-100, replacing multiples of 3 with "BIG", multiples of 5 with "BANG", and multiples of both with "BIGBANG".
+This TypeScript script generates an array of numbers from 1 to 100, replacing:
+- Numbers divisible by 3 with "BIG"
+- Numbers divisible by 5 with "BANG"
+- Numbers divisible by both 3 and 5 with "BIGBANG"
 
 ## Prerequisites
 
-- Node.js (Download from [nodejs.org](https://nodejs.org))
-- Git (Download from [git-scm.com](https://git-scm.com))
+- Node.js
+- TypeScript
 
-## Setup Instructions
+## Setup
 
-1. Clone the repository:
+1. Install TypeScript:
 ```bash
-git clone [your-repository-url]
-cd [repository-name]
+npm install -g typescript
 ```
 
-2. Initialize Node.js project:
+2. Install type definitions for Node.js:
 ```bash
-npm init -y
+npm install --save-dev @types/node
 ```
-
-3. Install dependencies:
-```bash
-npm install typescript @types/node --save-dev
-```
-
-4. Create TypeScript configuration:
-```bash
-npx tsc --init
-```
-
-5. Verify files exist:
-- big-bang.ts
-- tsconfig.json
-- package.json
 
 ## Running the Script
 
-1. Compile TypeScript to JavaScript:
+1. Compile the TypeScript file:
 ```bash
-npx tsc big-bang.ts
+tsc big-bang.ts
 ```
 
-2. Run the compiled code:
+2. Run the compiled JavaScript:
 ```bash
 node big-bang.js
 ```
 
-## Output
-
-The script generates `output.json` containing the array of numbers and words according to the specified rules.
-
-## File Structure
-```
-.
-├── README.md
-├── big-bang.ts
-├── tsconfig.json
-├── package.json
-└── output.json (generated)
-```
+The script will generate an `output.json` file in the same directory.
